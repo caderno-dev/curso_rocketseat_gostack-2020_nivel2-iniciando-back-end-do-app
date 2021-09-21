@@ -125,3 +125,18 @@ yarn add -D @types/multer
 
 
 ### Tratando exceções
+
+Para que as rotas async caiam no middleware de tratamento de erros será necessário instalar:
+
+```
+yarn add express-async-errors
+```
+
+E você deve importá-lo logo após a importação do express no arquivo `server.ts`:
+
+```
+...
+import express from 'express';
+import 'express-async-errors';
+...
+```
